@@ -1,0 +1,38 @@
+---
+import translations from '../i18n/translations.json';
+
+interface Props {
+  locale: 'en' | 'es';
+}
+
+const { locale } = Astro.props;
+const t = translations[locale];
+---
+
+<section>
+  <h2>{t.solution_title}</h2>
+  <article>
+    <h3>{t.solution_maintainers_title}</h3>
+    <ul>
+      <li>{t.solution_maintainers_1}</li>
+      <li>{t.solution_maintainers_2}</li>
+      <li>{t.solution_maintainers_3}</li>
+    </ul>
+  </article>
+  <article>
+    <h3>{t.solution_contributors_title}</h3>
+    <ul>
+      <li>{t.solution_contributors_1}</li>
+      <li>{t.solution_contributors_2}</li>
+      <li>{t.solution_contributors_3}</li>
+    </ul>
+  </article>
+  <article>
+    <h3>{t.solution_enterprises_title}</h3>
+    <ul>
+      <li>{t.solution_enterprises_1}</li>
+      <li>{t.solution_enterprises_2}</li>
+      <li>{t.solution_enterprises_3}</li>
+    </ul>
+  </article>
+</section>

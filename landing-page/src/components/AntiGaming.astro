@@ -1,0 +1,21 @@
+---
+import translations from '../i18n/translations.json';
+
+interface Props {
+  locale: 'en' | 'es';
+}
+
+const { locale } = Astro.props;
+const t = translations[locale];
+---
+
+<section>
+  <h2>{t.anti_gaming_title}</h2>
+  <ul>
+    <li>{t.anti_gaming_1}</li>
+    <li>{t.anti_gaming_2}</li>
+    <li>{t.anti_gaming_3}</li>
+    <li>{t.anti_gaming_4}</li>
+  </ul>
+  <p>{t.anti_gaming_note}</p>
+</section>

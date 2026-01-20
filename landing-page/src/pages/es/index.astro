@@ -1,0 +1,28 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Navigation from '../../components/Navigation.astro';
+import Hero from '../../components/Hero.astro';
+import Problem from '../../components/Problem.astro';
+import Solution from '../../components/Solution.astro';
+import Magic from '../../components/Magic.astro';
+import AntiGaming from '../../components/AntiGaming.astro';
+import SocialProof from '../../components/SocialProof.astro';
+import EarlyAccessForm from '../../components/EarlyAccessForm.astro';
+import FAQ from '../../components/FAQ.astro';
+import Footer from '../../components/Footer.astro';
+
+const locale = 'es';
+---
+
+<MainLayout locale={locale} title="OSS Rewards - Plataforma de Compensación Open Source">
+  <Navigation locale={locale} />
+  <Hero locale={locale} />
+  <Problem locale={locale} />
+  <Solution locale={locale} />
+  <Magic locale={locale} />
+  <AntiGaming locale={locale} />
+  <SocialProof locale={locale} />
+  <EarlyAccessForm locale={locale} />
+  <FAQ locale={locale} />
+  <Footer locale={locale} />
+</MainLayout>

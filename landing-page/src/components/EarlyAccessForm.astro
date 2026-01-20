@@ -1,0 +1,67 @@
+---
+import translations from '../i18n/translations.json';
+
+interface Props {
+  locale: 'en' | 'es';
+}
+
+const { locale } = Astro.props;
+const t = translations[locale];
+---
+
+<section id="access">
+  <h2>Get Early Access</h2>
+  
+  <article>
+    <h3>{t.form_maintainers_title}</h3>
+    <form id="form-maintainers">
+      <input type="text" placeholder={t.form_name} required />
+      <input type="email" placeholder={t.form_email} required />
+      <input type="text" placeholder={t.form_github} required />
+      <input type="url" placeholder={t.form_repo} required />
+      <input type="number" placeholder={t.form_hours} />
+      <textarea placeholder={t.form_willingness}></textarea>
+      <textarea placeholder={t.form_concerns}></textarea>
+      <button type="submit">{t.form_submit}</button>
+    </form>
+  </article>
+
+  <article>
+    <h3>{t.form_contributors_title}</h3>
+    <form id="form-contributors">
+      <input type="text" placeholder={t.form_name} required />
+      <input type="email" placeholder={t.form_email} required />
+      <input type="text" placeholder={t.form_github} required />
+      <input type="number" placeholder={t.form_prs} />
+      <select>
+        <option value="">{t.form_bounties}</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+      <textarea placeholder={t.form_motivation}></textarea>
+      <button type="submit">{t.form_submit}</button>
+    </form>
+  </article>
+
+  <article>
+    <h3>{t.form_enterprises_title}</h3>
+    <form id="form-enterprises">
+      <input type="text" placeholder={t.form_name} required />
+      <input type="email" placeholder={t.form_email} required />
+      <input type="text" placeholder={t.form_company} required />
+      <textarea placeholder={t.form_critical_deps}></textarea>
+      <input type="text" placeholder={t.form_budget} />
+      <button type="submit">{t.form_submit}</button>
+    </form>
+  </article>
+</section>
+
+<script>
+  document.querySelectorAll('form').forEach(form => {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('✅ You\'re in! Check your email.');
+      form.reset();
+    });
+  });
+</script>

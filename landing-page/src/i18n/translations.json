@@ -1,0 +1,162 @@
+{
+  "en": {
+    "nav_title": "OSS Rewards",
+    "nav_home": "Home",
+    "nav_access": "Early Access",
+    "lang_toggle": "ES",
+    
+    "hero_headline": "Open source is breaking.",
+    "hero_subline_1": "Maintainers are burning out. Spammers are flooding. Critical code is dying.",
+    "hero_promise": "Imagine an ecosystem where contributing quality code pays you, and maintaining projects doesn't destroy you.",
+    "hero_cta_maintainers": "Join Early Access - Maintainers",
+    "hero_cta_contributors": "Join Early Access - Contributors",
+    
+    "problem_title": "The Real Problem",
+    "problem_maintainers": "You review 47 PRs this week. 43 are AI-generated garbage. You can't take it anymore.",
+    "problem_contributors": "You fix a critical bug for free. Nobody thanks you. Not economically, not with recognition.",
+    "problem_enterprises": "Your stack depends on 200 libraries maintained by burned-out people. Massive risk.",
+    
+    "solution_title": "How It Works",
+    "solution_maintainers_title": "For Maintainers",
+    "solution_maintainers_1": "Publish bounties for issues/features you need solved",
+    "solution_maintainers_2": "The community validates PRs for you (reputation system)",
+    "solution_maintainers_3": "Focus on architecture, not spam",
+    
+    "solution_contributors_title": "For Contributors",
+    "solution_contributors_1": "Earn money solving real issues",
+    "solution_contributors_2": "Build verifiable on-chain reputation",
+    "solution_contributors_3": "Access premium projects with higher reputation",
+    
+    "solution_enterprises_title": "For Enterprises",
+    "solution_enterprises_1": "Fund maintenance of your critical dependencies",
+    "solution_enterprises_2": "Guarantee competent code review",
+    "solution_enterprises_3": "Transparent audit trail of all contributions",
+    
+    "magic_title": "Why Blockchain (But Don't Worry)",
+    "magic_text": "We use blockchain for 3 things that actually matter:\n1. Payments without predatory fees\n2. Reputation you can't delete or manipulate\n3. Community governance without dictators\n\nYou don't need to understand crypto to use this.",
+    
+    "anti_gaming_title": "Anti-Gaming: Built-In Protections",
+    "anti_gaming_1": "❌ You can't farm reputation with fake repos",
+    "anti_gaming_2": "❌ You can't approve your own PRs",
+    "anti_gaming_3": "❌ You can't spam AI garbage without losing money",
+    "anti_gaming_4": "✅ Stake system + community validation + pattern detection",
+    "anti_gaming_note": "(Technical details shared with early access members)",
+    
+    "social_proof_title": "Already Talking With",
+    "social_proof_text": "We're in conversations with maintainers of major OSS projects.",
+    "social_proof_cta": "Maintain a project with 1000+ stars? We want to talk to you first.",
+    
+    "faq_title": "Questions?",
+    "faq_q1": "Doesn't this already exist?",
+    "faq_a1": "Yes (Gitcoin, Tea, etc.), but we're doing it differently. We focus on real incentives, not hype. Quality first.",
+    "faq_q2": "Why blockchain?",
+    "faq_a2": "Only for what matters: cheap payments, immutable reputation, governance without gatekeepers. Everything else is boring tech.",
+    "faq_q3": "When do you launch?",
+    "faq_a3": "Q3 2025 if we validate 200+ quality early signups. We're not rushing.",
+    "faq_q4": "How do you prevent another dead platform?",
+    "faq_a4": "We don't launch until 20+ real projects are committed. Real commitments first, hype never.",
+    
+    "form_maintainers_title": "For Maintainers",
+    "form_contributors_title": "For Contributors",
+    "form_enterprises_title": "For Enterprises",
+    
+    "form_name": "Name",
+    "form_email": "Email",
+    "form_github": "GitHub Username",
+    "form_repo": "Main Repository URL",
+    "form_hours": "Hours/week reviewing PRs",
+    "form_willingness": "How much would you pay monthly to skip PR spam?",
+    "form_concerns": "What concerns you about this system?",
+    "form_prs": "PRs made to OSS in the last year",
+    "form_bounties": "Used bounty platforms before?",
+    "form_motivation": "What motivates you more: money or verified reputation?",
+    "form_company": "Company Name",
+    "form_critical_deps": "Which OSS dependencies are critical for you?",
+    "form_budget": "Annual budget for OSS maintenance?",
+    "form_submit": "Get Early Access",
+    "form_success": "✅ You're in! Check your email.",
+    
+    "footer_copyright": "© 2025 OSS Rewards. Building a better open source ecosystem.",
+    "footer_links": "Privacy • Terms • GitHub"
+  },
+  "es": {
+    "nav_title": "OSS Rewards",
+    "nav_home": "Inicio",
+    "nav_access": "Acceso Temprano",
+    "lang_toggle": "EN",
+    
+    "hero_headline": "El open source se está rompiendo.",
+    "hero_subline_1": "Los mantenedores se queman. Los spammers saturan. El código crítico muere.",
+    "hero_promise": "Imagina un ecosistema donde contribuir código de calidad te paga, y mantener proyectos no te destruye.",
+    "hero_cta_maintainers": "Acceso Temprano - Mantenedores",
+    "hero_cta_contributors": "Acceso Temprano - Contribuidores",
+    
+    "problem_title": "El Verdadero Problema",
+    "problem_maintainers": "Revisas 47 PRs esta semana. 43 son basura generada con IA. No puedes más.",
+    "problem_contributors": "Arreglas un bug crítico gratis. Nadie te lo agradece. Ni económicamente ni con reconocimiento.",
+    "problem_enterprises": "Tu stack depende de 200 librerías mantenidas por gente quemada. Riesgo masivo.",
+    
+    "solution_title": "Cómo Funciona",
+    "solution_maintainers_title": "Para Mantenedores",
+    "solution_maintainers_1": "Publica recompensas por issues/features que necesitas",
+    "solution_maintainers_2": "La comunidad valida PRs por ti (sistema de reputación)",
+    "solution_maintainers_3": "Céntrate en arquitectura, no en spam",
+    
+    "solution_contributors_title": "Para Contribuidores",
+    "solution_contributors_1": "Gana dinero resolviendo issues reales",
+    "solution_contributors_2": "Construye reputación verificable on-chain",
+    "solution_contributors_3": "Accede a proyectos más premium con más reputación",
+    
+    "solution_enterprises_title": "Para Empresas",
+    "solution_enterprises_1": "Financia el mantenimiento de tus dependencias críticas",
+    "solution_enterprises_2": "Garantiza que alguien competente revisa el código",
+    "solution_enterprises_3": "Auditoría transparente de todas las contribuciones",
+    
+    "magic_title": "¿Por Qué Blockchain? (Pero No Te Asustes)",
+    "magic_text": "Usamos blockchain para 3 cosas que importan:\n1. Pagos sin comisiones abusivas\n2. Reputación que no se puede borrar ni manipular\n3. Governance comunitaria sin dictadores\n\nNo necesitas entender crypto para usar esto.",
+    
+    "anti_gaming_title": "A Prueba de Tramposos",
+    "anti_gaming_1": "❌ No puedes farmear reputación con repos fake",
+    "anti_gaming_2": "❌ No puedes aprobar tus propios PRs",
+    "anti_gaming_3": "❌ No puedes spammear código IA basura sin perder dinero",
+    "anti_gaming_4": "✅ Sistema de stake + validación comunitaria + detección de patrones",
+    "anti_gaming_note": "(Los detalles técnicos se compartirán con los miembros de acceso temprano)",
+    
+    "social_proof_title": "Ya Estamos Hablando Con",
+    "social_proof_text": "Estamos en conversaciones con mantenedores de proyectos OSS importantes.",
+    "social_proof_cta": "¿Mantienes un proyecto con +1000 stars? Queremos hablar contigo primero.",
+    
+    "faq_title": "¿Preguntas?",
+    "faq_q1": "¿Esto no existe ya?",
+    "faq_a1": "Sí (Gitcoin, Tea, etc.), pero lo hacemos diferente. Nos enfocamos en incentivos reales, no en hype. Calidad primero.",
+    "faq_q2": "¿Por qué blockchain?",
+    "faq_a2": "Solo para lo que importa: pagos baratos, reputación inmutable, governance sin gatekeepers. Todo lo demás es tech aburrida.",
+    "faq_q3": "¿Cuándo lanzan?",
+    "faq_a3": "Q3 2025 si validamos 200+ signups de calidad. No nos apresuramos.",
+    "faq_q4": "¿Cómo evitan que sea otra plataforma muerta?",
+    "faq_a4": "No lanzamos hasta tener 20+ proyectos reales comprometidos. Compromisos reales primero, hype nunca.",
+    
+    "form_maintainers_title": "Para Mantenedores",
+    "form_contributors_title": "Para Contribuidores",
+    "form_enterprises_title": "Para Empresas",
+    
+    "form_name": "Nombre",
+    "form_email": "Email",
+    "form_github": "Usuario de GitHub",
+    "form_repo": "URL del Repositorio Principal",
+    "form_hours": "Horas/semana revisando PRs",
+    "form_willingness": "¿Cuánto pagarías mensualmente para no revisar spam?",
+    "form_concerns": "¿Qué te preocupa de este sistema?",
+    "form_prs": "PRs hechos en OSS el último año",
+    "form_bounties": "¿Has usado plataformas de recompensas antes?",
+    "form_motivation": "¿Qué te motiva más: dinero o reputación verificada?",
+    "form_company": "Nombre de la Empresa",
+    "form_critical_deps": "¿Cuáles son tus dependencias OSS críticas?",
+    "form_budget": "¿Presupuesto anual para mantenimiento OSS?",
+    "form_submit": "Conseguir Acceso",
+    "form_success": "✅ ¡Estás dentro! Revisa tu email.",
+    
+    "footer_copyright": "© 2025 OSS Rewards. Construyendo un mejor ecosistema open source.",
+    "footer_links": "Privacidad • Términos • GitHub"
+  }
+}
