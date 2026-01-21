@@ -20,7 +20,9 @@ body {
   color: #1a1a1a;
   background: #fff;
   line-height: 1.6;
-  padding: 0 6rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 /* Layout */
@@ -28,8 +30,8 @@ nav,
 section,
 footer,
 article {
-  margin-left: var(--margin-h);
-  margin-right: var(--margin-h);
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /* Separators between sections */
@@ -173,10 +175,16 @@ footer p {
   margin-bottom: 0.5rem;
 }
 
+/* Freetext paragraphs */
+.freetext {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   body {
-    padding: 0 4rem;
+    padding: 0 1.5rem;
   }
   
   h1 {
