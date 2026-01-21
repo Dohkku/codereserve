@@ -8,11 +8,16 @@
     "build": "astro build",
     "preview": "astro preview"
   },
-  "keywords": ["astro", "landing", "i18n"],
+  "keywords": [
+    "astro",
+    "landing",
+    "i18n"
+  ],
   "author": "",
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "astro": "^5.16.11"
+    "astro": "^5.16.11",
+    "resend": "^6.8.0"
   }
 }

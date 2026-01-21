@@ -21,15 +21,13 @@
     "status_title": "Status",
     "status_text": "Building MVP.\n\nFocusing on:\nSolidity Escrow Contracts.\nThe GitHub \"Bouncer\" Bot.\n\nIf you maintain a repo with >500 stars and hate your notifications tab, email us.\nIf you want to fund the development, email us.",
     
-
-    
     "social_proof_title": "Already Talking With",
     "social_proof_text": "We're in conversations with maintainers of major OSS projects.",
     "social_proof_cta": "Maintain a project with 1000+ stars? We want to talk to you first.",
     
     "faq_title": "Questions?",
-    "faq_q1": "Is this a GitHub replacement?",
-    "faq_a1": "No. It's a wrapper. Code stays on GitHub. We handle the economics and the filtering.",
+    "faq_q1": "Doesn't this already exist? (Tea.xyz, Gitcoin...)",
+    "faq_a1": "Yes, but their incentives are backwards.\n\nVs. Tea.xyz: They pay \"royalties\" based on dependency graphs. This creates a perverse incentive to upload AI-generated slop just to farm tokens. They add noise to the ecosystem; we remove it. Our Staking model makes spamming financially painful.\n\nVs. Gitcoin: Gitcoin is charity (Grants). You rely on goodwill and quarterly funding rounds. We are a labor market: you fix the bug, you pass validation, you get paid instantly. We don't ask for donations, we pay for results.",
     "faq_q2": "Why Blockchain?",
     "faq_a2": "Because Stripe doesn't handle escrow logic, programmable treasuries, or permissionless reputation. We use crypto for the backend rails. You don't need to care about the \"community\" or the \"vibes\".",
     "faq_q3": "Is this pay-to-play?",
@@ -61,7 +59,7 @@
     "footer_links": "Privacy • Terms • GitHub"
   },
   "es": {
-    "nav_title": "The Singularity Is Coming",
+    "nav_title": "OSS Rewards",
     "nav_home": "Inicio",
     "nav_access": "Acceso Anticipado",
     "lang_toggle": "EN",
@@ -72,8 +70,8 @@
     "hero_cta_maintainers": "Acceso Anticipado - Mantenedores",
     "hero_cta_contributors": "Acceso Anticipado - Contribuidores",
     
-      "problem_title": "LA REALIDAD",
-      "problem_text": "Los mantenedores están quemadísimos.\nTu repositorio está siendo spameado por vibe coders y agentes buscando commits fáciles.\nFiltrar spam es currar gratis.\n\nSi esto sigue así, los mantenedores lo dejarán y la infraestructura crítica se pudrirá.",
+    "problem_title": "LA REALIDAD",
+    "problem_text": "Los mantenedores están quemadísimos.\nTu repositorio está siendo spameado por vibe coders y agentes buscando commits fáciles.\nFiltrar spam es currar gratis.\n\nSi esto sigue así, los mantenedores lo dejarán y la infraestructura crítica se pudrirá.",
     
     "solution_title": "EL MECANISMO",
     "solution_text": "Introducimos Fricción Económica a los Pull Requests.\n\nEl Portero (Bot): Envolvemos tu repo. Si se abre un PR sin fianza (Stake), nuestro bot lo cierra ipso facto.\nEl Stake: Los contribuidores depositan USDC/ETH para abrir un PR.\nCódigo Válido: Se devuelve el 100%.\nCódigo Aceptado: Se devuelve + Recompensa (Bounty).\nSpam/Basura: Se quema la fianza (slash) y va a la tesorería del repo para financiar futuras recompensas.\n\nEl Resultado: El spam baja a cero. Solo pone pasta sobre la mesa quien confía en su código.\n\n---\n\nPARA MANTENEDORES\nDeja de revisar spam.\nInstala nuestra GitHub App.\nConecta una wallet.\nDeja que el mercado filtre el ruido.\nTú mantienes el control total. Tú decides qué se fusiona (merge). Nosotros solo limpiamos tu inbox.\n\nPARA CONTRIBUIDORES\nDeja de currar por puntitos de internet.\nConstruye un currículum criptográfico (SBTs) que demuestre que realmente shipeas código.\nGana recompensas por resolver problemas reales.\nSi eres bueno, no pierdes nada. Si eres un bot, te arruinas.\n\nPARA EMPRESAS (GOBERNANZA)\nTus dependencias son riesgos infrafinanciados.\nNo dones a ciegas.\nFinancia la Tesorería: Manda fondos al smart contract del proyecto.\nVota el Roadmap: Los donantes votan qué issues tienen prioridad de recompensa.\nSi lo pagas, se construye.",
@@ -82,20 +80,21 @@
     "status_title": "ESTADO",
     "status_text": "Montando el MVP.\n\nFoco en:\nContratos de Escrow en Solidity.\nEl Bot \"Portero\" de GitHub.\n\nSi mantienes un repo con >500 estrellas y odias tu pestaña de notificaciones, mándanos un email.\nSi quieres financiar el desarrollo, mándanos un email.",
 
-    
     "social_proof_title": "YA ESTAMOS HABLANDO CON",
     "social_proof_text": "Estamos en conversaciones con mantenedores de proyectos OSS tochos.",
     "social_proof_cta": "¿Mantienes un proyecto con +1000 estrellas? Queremos hablar contigo primero.",
     
     "faq_title": "PREGUNTAS (FAQ)",
-    "faq_q1": "¿Esto reemplaza a GitHub?",
-    "faq_a1": "No. Es un wrapper (una capa por encima). El código se queda en GitHub. Nosotros llevamos la economía y el filtrado.",
-    "faq_q2": "¿Por qué Blockchain?",
-    "faq_a2": "Porque Stripe no gestiona lógica de escrow, tesorerías programables ni reputación sin permisos (permissionless). Usamos cripto para las tuberías del backend. No te tiene que importar ni la \"comunidad\" ni las \"vibes\".",
-    "faq_q3": "¿Es pay-to-play? (Pagar por jugar)",
-    "faq_a3": "Es stake-to-play (Apostar por jugar). Te cuesta 0€ si eres competente. Te cuesta dinero si nos haces perder el tiempo.",
-    "faq_q4": "¿Quién lleva esto?",
-    "faq_a4": "De momento un dev montando el MVP. Objetivo: Un protocolo descentralizado gobernado por los nodos que hacen el trabajo.",
+    "faq_q1": "¿No existe ya esto? (Tea.xyz, Gitcoin...)",
+    "faq_a1": "Sí, pero sus incentivos están rotos.\n\nDiferencia con Tea.xyz: Ellos pagan \"regalías\" por tener dependencias. Eso incentiva a subir librerías basura generadas por IA solo para farmear tokens. Ellos añaden ruido al sistema; nosotros lo eliminamos. Nuestro modelo de fianza hace que spamear sea económicamente ruinoso.\n\nDiferencia con Gitcoin: Gitcoin es caridad (Grants). Dependes de la buena voluntad y de rondas de financiación. Nosotros somos un mercado laboral: arreglas el bug, pasas la validación, cobras al instante. No pedimos limosna, pagamos por resultados.",
+    "faq_q2": "¿Es esto un reemplazo de GitHub?",
+    "faq_a2": "No. Es un wrapper (una capa por encima). El código se queda en GitHub. Nosotros llevamos la economía y el filtrado.",
+    "faq_q3": "¿Por qué Blockchain?",
+    "faq_a3": "Porque Stripe no gestiona lógica de escrow, tesorerías programables ni reputación sin permisos (permissionless). Usamos cripto para las tuberías del backend. No te tiene que importar ni la \"comunidad\" ni las \"vibes\".",
+    "faq_q4": "¿Es pay-to-play? (Pagar por jugar)",
+    "faq_a4": "Es stake-to-play (Apostar por jugar). Te cuesta 0€ si eres competente. Te cuesta dinero si nos haces perder el tiempo.",
+    "faq_q5": "¿Quién lleva esto?",
+    "faq_a5": "De momento un dev montando el MVP. Objetivo: Un protocolo descentralizado gobernado por los nodos que hacen el trabajo.",
     
     "form_maintainers_title": "Para Mantenedores",
     "form_contributors_title": "Para Contribuidores",
