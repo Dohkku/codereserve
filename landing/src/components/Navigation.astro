@@ -1,0 +1,22 @@
+---
+import translations from '../i18n/translations.json';
+
+interface Props {
+  locale: 'en' | 'es';
+}
+
+const { locale } = Astro.props;
+const t = translations[locale];
+const otherLocale = locale === 'en' ? 'es' : 'en';
+const otherPath = `/${otherLocale}/`;
+---
+
+<nav>
+  <div>
+    <a href={`/${locale}/`}>{t.nav_title}</a>
+  </div>
+  <div>
+    <a href={`/${locale}/#access`}>{t.nav_access}</a>
+    <a href={otherPath}>{t.lang_toggle}</a>
+  </div>
+</nav>

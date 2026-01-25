@@ -1,0 +1,90 @@
+{
+  "en": {
+    "nav_title": "CodeReserve",
+    "nav_home": "Home",
+    "nav_access": "Early Access",
+    "lang_toggle": "ES",
+
+    "hero_headline": "Reputation-based noise filtering for Open Source.",
+    "hero_subline_1": "Trusted contributors work freely. Unverified accounts provide a Security Deposit.\nYour inbox stays clean. Good devs aren't blocked. Spam disappears.",
+    "hero_promise": "",
+    "hero_cta_maintainers": "Early Access - Maintainers (Limited)",
+    "hero_cta_contributors": "Early Access - Contributors",
+
+    "problem_title": "The Reality",
+    "problem_text": "Maintainers are burnt out.\nYour repo is getting flooded with low-quality contributions from new accounts and automated tools.\nFiltering noise is unpaid labor.\n\nIf this continues, maintainers will quit and critical infrastructure will rot. You shouldn't have to choose between an open repo and your sanity.",
+
+    "solution_title": "The Mechanism",
+    "solution_text": "We introduce a Reputation Shield for Pull Requests.\n\nPhase 1 - The Gatekeeper: When a PR is opened, we calculate a Risk Score based on GitHub account age, historical merges in protected repos, and whitelist status.\n\nPhase 2 - The Outcome:\n• Low Risk: PR accepted immediately. Label: CR-Trusted.\n• High Risk (new/flagged accounts): PR auto-closed with instructions.\n\nPhase 3 - The Security Deposit (Bail):\nUnverified users can deposit $5 to re-open their PR.\n• PR Merged or Closed: Deposit refunded automatically.\n• Maintainer flags as Spam: Deposit slashed to repo treasury.\n\nResult: Trusted devs work freely. New contributors prove intent with a refundable deposit. Spam becomes financially painful.\n\n---\n\nFOR MAINTAINERS\nStop reviewing noise.\nInstall the GitHub App. Set your reputation threshold. Done.\nTrusted contributors pass through. Unknowns provide a deposit. You keep full control over what gets merged.\n\nFOR CONTRIBUTORS\nYour reputation follows you.\nBuild merit across protected repos. Once trusted, you never pay.\nNew to the ecosystem? A $5 refundable deposit proves you're serious.\nIf your code is good, it costs you nothing.\n\nFOR COMPANIES\nYour dependencies are maintained by burned-out volunteers.\nFund the Treasury: Send funds directly to a project's smart contract.\nThese funds become bounties for verified contributors.\nTransparent. On-chain. Accountable.",
+
+    "status_title": "Status",
+    "status_text": "Building MVP.\n\nCurrently focused on:\n→ Reputation Scoring System\n→ GitHub Webhook Integration\n→ Escrow Smart Contracts\n\nMaintain a repo with >500 stars and want cleaner PRs? Email us.\nWant to fund development? Email us.",
+
+    "social_proof_title": "Early Partners",
+    "social_proof_text": "In talks with maintainers of projects totaling 50k+ stars.",
+    "social_proof_cta": "Maintain a project with 1000+ stars? You get priority. Get in touch.",
+
+    "faq_title": "FAQ",
+    "faq_q1": "Don't similar tools already exist? (Tea.xyz, Gitcoin...)",
+    "faq_a1": "Yes. Their incentives are broken.\n\nTea.xyz: Pays based on dependency graphs. This incentivizes low-quality submissions to farm tokens. They add noise; we filter it.\n\nGitcoin: Relies on donations and goodwill. We're a merit-based system: proven contributors work freely, unknowns prove intent with a refundable deposit.\n\nWe're Reputation First. The deposit is a last resort, not a gate.",
+    "faq_q2": "Why Blockchain?",
+    "faq_a2": "Programmable escrow, transparent treasuries, and permissionless reputation. Traditional payment rails don't support automatic refunds based on PR outcomes. We use crypto as infrastructure. No tokens. No speculation.",
+    "faq_q3": "Is this pay-to-play?",
+    "faq_a3": "No. It's Reputation First.\n\nTrusted contributors (good account history, previous merges) work for free. Only unverified accounts need to provide a Security Deposit, and it's fully refunded when the PR is reviewed.\n\nIf you're legitimate, it costs nothing.",
+    "faq_q4": "Who runs this?",
+    "faq_a4": "One dev building the MVP. Goal: decentralized protocol governed by the maintainers and contributors doing the work.",
+
+    "contact_title": "Want In?",
+    "contact_instructions": "Email dohkku@codereserve.org with:",
+    "contact_info_role": "Who you are (maintainer / contributor / company)",
+    "contact_info_github": "Your GitHub profile or repo",
+    "contact_info_interest": "Why you care",
+
+    "footer_copyright": "© 2026 CodeReserve.",
+    "footer_links": "Privacy • Terms • GitHub"
+  },
+  "es": {
+    "nav_title": "CodeReserve",
+    "nav_home": "Inicio",
+    "nav_access": "Acceso Anticipado",
+    "lang_toggle": "EN",
+
+    "hero_headline": "Filtrado de ruido basado en reputacion para Open Source.",
+    "hero_subline_1": "Los contributors de confianza trabajan libremente. Las cuentas no verificadas aportan un Deposito de Seguridad.\nTu inbox se mantiene limpio. Los buenos devs no se bloquean. El spam desaparece.",
+    "hero_promise": "",
+    "hero_cta_maintainers": "Acceso Anticipado - Maintainers (Limitado)",
+    "hero_cta_contributors": "Acceso Anticipado - Contributors",
+
+    "problem_title": "La Realidad",
+    "problem_text": "Los maintainers estan quemados.\nTu repo esta siendo inundado con contribuciones de baja calidad de cuentas nuevas y herramientas automatizadas.\nFiltrar ruido es trabajo no pagado.\n\nSi esto continua, los maintainers van a abandonar y la infraestructura critica se pudrira. No deberias tener que elegir entre un repo abierto y tu cordura.",
+
+    "solution_title": "El Mecanismo",
+    "solution_text": "Introducimos un Escudo de Reputacion para Pull Requests.\n\nFase 1 - El Filtro: Cuando se abre un PR, calculamos un Score de Riesgo basado en la antiguedad de la cuenta de GitHub, merges historicos en repos protegidos, y estado de whitelist.\n\nFase 2 - El Resultado:\n• Bajo Riesgo: PR aceptado inmediatamente. Etiqueta: CR-Trusted.\n• Alto Riesgo (cuentas nuevas/marcadas): PR cerrado automaticamente con instrucciones.\n\nFase 3 - El Deposito de Seguridad (Fianza):\nLos usuarios no verificados pueden depositar $5 para reabrir su PR.\n• PR Mergeado o Cerrado: Deposito devuelto automaticamente.\n• Maintainer marca como Spam: Deposito confiscado a la tesoreria del repo.\n\nResultado: Los devs de confianza trabajan libremente. Los nuevos contributors demuestran intencion con un deposito reembolsable. El spam se vuelve financieramente doloroso.\n\n---\n\nPARA MAINTAINERS\nDeja de revisar ruido.\nInstala la GitHub App. Configura tu umbral de reputacion. Listo.\nLos contributors de confianza pasan. Los desconocidos aportan un deposito. Mantienes control total sobre que se mergea.\n\nPARA CONTRIBUTORS\nTu reputacion te sigue.\nConstruye merito en repos protegidos. Una vez eres de confianza, nunca pagas.\n¿Nuevo en el ecosistema? Un deposito reembolsable de $5 demuestra que vas en serio.\nSi tu codigo es bueno, no te cuesta nada.\n\nPARA EMPRESAS\nTus dependencias son mantenidas por voluntarios quemados.\nFinancia la Tesoreria: Manda fondos directamente al smart contract del proyecto.\nEstos fondos se convierten en bounties para contributors verificados.\nTransparente. On-chain. Responsable.",
+
+    "status_title": "Estado",
+    "status_text": "Construyendo el MVP.\n\nAhora mismo enfocados en:\n→ Sistema de Puntuacion de Reputacion\n→ Integracion de Webhooks de GitHub\n→ Contratos de Escrow\n\n¿Mantienes un repo con >500 estrellas y quieres PRs mas limpios? Escribenos.\n¿Quieres financiar el desarrollo? Escribenos.",
+
+    "social_proof_title": "Partners Iniciales",
+    "social_proof_text": "En conversaciones con maintainers de proyectos que suman +50k estrellas.",
+    "social_proof_cta": "¿Mantienes un proyecto con +1000 estrellas? Tienes prioridad. Escribenos.",
+
+    "faq_title": "FAQ",
+    "faq_q1": "¿No existen ya herramientas similares? (Tea.xyz, Gitcoin...)",
+    "faq_a1": "Si. Sus incentivos estan rotos.\n\nTea.xyz: Paga basado en grafos de dependencias. Esto incentiva contribuciones de baja calidad para farmear tokens. Ellos anaden ruido; nosotros lo filtramos.\n\nGitcoin: Depende de donaciones y buena voluntad. Nosotros somos un sistema basado en merito: los contributors probados trabajan libremente, los desconocidos demuestran intencion con un deposito reembolsable.\n\nSomos Reputacion Primero. El deposito es un ultimo recurso, no una barrera.",
+    "faq_q2": "¿Por que Blockchain?",
+    "faq_a2": "Escrow programable, tesorerias transparentes, y reputacion permissionless. Los sistemas de pago tradicionales no soportan reembolsos automaticos basados en resultados de PRs. Usamos crypto como infraestructura. Sin tokens. Sin especulacion.",
+    "faq_q3": "¿Es pay-to-play?",
+    "faq_a3": "No. Es Reputacion Primero.\n\nLos contributors de confianza (buen historial de cuenta, merges previos) trabajan gratis. Solo las cuentas no verificadas necesitan aportar un Deposito de Seguridad, y se reembolsa completamente cuando el PR es revisado.\n\nSi eres legitimo, no te cuesta nada.",
+    "faq_q4": "¿Quien esta detras?",
+    "faq_a4": "Un dev construyendo el MVP. Objetivo: protocolo descentralizado gobernado por los maintainers y contributors que hacen el trabajo.",
+
+    "contact_title": "¿Quieres entrar?",
+    "contact_instructions": "Email a dohkku@codereserve.org con:",
+    "contact_info_role": "Quien eres (maintainer / contributor / empresa)",
+    "contact_info_github": "Tu perfil de GitHub o repo",
+    "contact_info_interest": "Por que te interesa",
+
+    "footer_copyright": "© 2026 CodeReserve.",
+    "footer_links": "Privacidad • Terminos • GitHub"
+  }
+}

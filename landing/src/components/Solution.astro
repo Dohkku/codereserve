@@ -1,0 +1,15 @@
+---
+import translations from '../i18n/translations.json';
+
+interface Props {
+  locale: 'en' | 'es';
+}
+
+const { locale } = Astro.props;
+const t = translations[locale];
+---
+
+<section>
+  <h2>{t.solution_title}</h2>
+  <p class="freetext">{t.solution_text}</p>
+</section>

@@ -1,0 +1,66 @@
+---
+import translations from '../i18n/translations.json';
+
+interface Props {
+  locale: 'en' | 'es';
+}
+
+const { locale } = Astro.props;
+const t = translations[locale];
+---
+
+<section id="access">
+  <h2>{t.contact_title}</h2>
+
+  <div class="contact-box">
+    <p class="contact-email">
+      <a href="mailto:dohkku@codereserve.org">dohkku@codereserve.org</a>
+    </p>
+
+    <p class="contact-instructions">{t.contact_instructions}</p>
+
+    <ul class="contact-info-list">
+      <li><strong>{t.contact_info_role}</strong></li>
+      <li><strong>{t.contact_info_github}</strong></li>
+      <li><strong>{t.contact_info_interest}</strong></li>
+    </ul>
+  </div>
+</section>
+
+<style>
+  #access {
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  .contact-box {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .contact-email {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-email a {
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  .contact-instructions {
+    margin-bottom: 1rem;
+    opacity: 0.8;
+  }
+
+  .contact-info-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+  }
+
+  .contact-info-list li {
+    margin: 0.5rem 0;
+  }
+</style>

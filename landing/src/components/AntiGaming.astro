@@ -1,0 +1,13 @@
+---
+import translations from '../i18n/translations.json';
+
+interface Props {
+  locale: 'en' | 'es';
+}
+
+const { locale } = Astro.props;
+const t = translations[locale];
+---
+
+<!-- This component is now hidden in the page flow -->
+<!-- Keeping it empty as AntiGaming is deprecated -->

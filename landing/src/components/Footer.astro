@@ -1,0 +1,15 @@
+---
+import translations from '../i18n/translations.json';
+
+interface Props {
+  locale: 'en' | 'es';
+}
+
+const { locale } = Astro.props;
+const t = translations[locale];
+---
+
+<footer>
+  <p>{t.footer_copyright}</p>
+  <p>{t.footer_links}</p>
+</footer>
