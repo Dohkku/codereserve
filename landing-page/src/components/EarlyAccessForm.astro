@@ -10,86 +10,57 @@ const t = translations[locale];
 ---
 
 <section id="access">
-  <h2>Get Early Access</h2>
-  
-  <article>
-    <h3>{t.form_maintainers_title}</h3>
-    <form id="form-maintainers" class="form-handler">
-      <input type="text" name="name" placeholder={t.form_name} required />
-      <input type="email" name="email" placeholder={t.form_email} required />
-      <input type="text" name="github" placeholder={t.form_github} required />
-      <input type="url" name="repo" placeholder={t.form_repo} required />
-      <input type="number" name="hours" placeholder={t.form_hours} />
-      <textarea name="willingness" placeholder={t.form_willingness}></textarea>
-      <textarea name="concerns" placeholder={t.form_concerns}></textarea>
-      <button type="submit">{t.form_submit}</button>
-    </form>
-  </article>
+  <h2>{t.contact_title}</h2>
 
-  <article>
-    <h3>{t.form_contributors_title}</h3>
-    <form id="form-contributors" class="form-handler">
-      <input type="text" name="name" placeholder={t.form_name} required />
-      <input type="email" name="email" placeholder={t.form_email} required />
-      <input type="text" name="github" placeholder={t.form_github} required />
-      <input type="number" name="prs" placeholder={t.form_prs} />
-      <select name="bounties">
-        <option value="">{t.form_bounties}</option>
-        <option value="yes">Yes</option>
-        <option value="no">No</option>
-      </select>
-      <textarea name="motivation" placeholder={t.form_motivation}></textarea>
-      <button type="submit">{t.form_submit}</button>
-    </form>
-  </article>
+  <div class="contact-box">
+    <p class="contact-email">
+      <a href="mailto:dohkku@codereserve.org">dohkku@codereserve.org</a>
+    </p>
 
-  <article>
-    <h3>{t.form_enterprises_title}</h3>
-    <form id="form-enterprises" class="form-handler">
-      <input type="text" name="name" placeholder={t.form_name} required />
-      <input type="email" name="email" placeholder={t.form_email} required />
-      <input type="text" name="company" placeholder={t.form_company} required />
-      <textarea name="deps" placeholder={t.form_critical_deps}></textarea>
-      <input type="text" name="budget" placeholder={t.form_budget} />
-      <button type="submit">{t.form_submit}</button>
-    </form>
-  </article>
+    <p class="contact-instructions">{t.contact_instructions}</p>
+
+    <ul class="contact-info-list">
+      <li><strong>{t.contact_info_role}</strong></li>
+      <li><strong>{t.contact_info_github}</strong></li>
+      <li><strong>{t.contact_info_interest}</strong></li>
+    </ul>
+  </div>
 </section>
 
-<script>
-  document.querySelectorAll('.form-handler').forEach(form => {
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      
-      const formType = form.id.replace('form-', '');
-      const name = form.querySelector('input[name="name"]').value;
-      const email = form.querySelector('input[name="email"]').value;
-      
-      // Collect all form data
-      const data = {};
-      form.querySelectorAll('input, textarea, select').forEach(field => {
-        if (field.name && field.name !== 'name' && field.name !== 'email') {
-          data[field.name] = field.value;
-        }
-      });
+<style>
+  #access {
+    text-align: center;
+    padding: 2rem 0;
+  }
 
-      try {
-        const response = await fetch('/api/send-email', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ formType, name, email, data })
-        });
+  .contact-box {
+    max-width: 500px;
+    margin: 0 auto;
+  }
 
-        if (response.ok) {
-          alert('✅ You\'re in! Check your email.');
-          form.reset();
-        } else {
-          alert('Error sending email. Please try again.');
-        }
-      } catch (error) {
-        console.error('Form submission error:', error);
-        alert('Error submitting form. Please try again.');
-      }
-    });
-  });
-</script>
+  .contact-email {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-email a {
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  .contact-instructions {
+    margin-bottom: 1rem;
+    opacity: 0.8;
+  }
+
+  .contact-info-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+  }
+
+  .contact-info-list li {
+    margin: 0.5rem 0;
+  }
+</style>

@@ -1,12 +1,11 @@
 import { defineConfig } from 'astro/config';
-
-import netlify from '@astrojs/netlify';
+import vercel from '@astrojs/vercel';
 
 export default defineConfig({
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'es']
   },
-
-  adapter: netlify()
+  output: 'static',
+  adapter: vercel()
 });
