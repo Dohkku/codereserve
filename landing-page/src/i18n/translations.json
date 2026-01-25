@@ -1,6 +1,6 @@
 {
   "en": {
-    "nav_title": "OSS Rewards",
+    "nav_title": "CodeReserve",
     "nav_home": "Home",
     "nav_access": "Early Access",
     "lang_toggle": "ES",
@@ -41,11 +41,11 @@
     "contact_info_github": "Your GitHub profile or repo",
     "contact_info_interest": "Why you care",
 
-    "footer_copyright": "© 2025 OSS Rewards.",
+    "footer_copyright": "© 2026 CodeReserve.",
     "footer_links": "Privacy • Terms • GitHub"
   },
   "es": {
-    "nav_title": "OSS Rewards",
+    "nav_title": "CodeReserve",
     "nav_home": "Inicio",
     "nav_access": "Acceso Anticipado",
     "lang_toggle": "EN",
@@ -86,7 +86,7 @@
     "contact_info_github": "Tu perfil de GitHub o repo",
     "contact_info_interest": "Por qué te interesa",
 
-    "footer_copyright": "© 2025 OSS Rewards.",
+    "footer_copyright": "© 2026 CodeReserve.",
     "footer_links": "Privacidad • Términos • GitHub"
   }
 }
