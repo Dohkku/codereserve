@@ -1,27 +1,85 @@
 ---
-const { locale } = Astro.props;
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
+import translations from '../i18n/translations.json';
 import '../styles/global.css';
 
 interface Props {
-  locale: 'en' | 'es';
   title?: string;
 }
 
-const { title = 'OSS Rewards' } = Astro.props;
+const { title = 'CodeReserve' } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang={locale}>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{title}</title>
   </head>
   <body>
-    <Navigation locale={locale} />
+    <Navigation />
     <slot />
-    <Footer locale={locale} />
+    <Footer />
+
+    <script define:vars={{ translations }}>
+      (function() {
+        const STORAGE_KEY = 'preferred-language';
+
+        function getPreferredLanguage() {
+          const stored = localStorage.getItem(STORAGE_KEY);
+          if (stored && (stored === 'en' || stored === 'es')) {
+            return stored;
+          }
+          const browserLang = navigator.language.slice(0, 2);
+          return browserLang === 'es' ? 'es' : 'en';
+        }
+
+        function setLanguage(lang) {
+          localStorage.setItem(STORAGE_KEY, lang);
+          document.documentElement.lang = lang;
+          applyTranslations(lang);
+          updateToggle(lang);
+        }
+
+        function applyTranslations(lang) {
+          const t = translations[lang];
+          document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (t[key]) {
+              el.textContent = t[key];
+            }
+          });
+        }
+
+        function updateToggle(lang) {
+          const toggle = document.getElementById('lang-toggle');
+          if (toggle) {
+            const enBtn = toggle.querySelector('[data-lang="en"]');
+            const esBtn = toggle.querySelector('[data-lang="es"]');
+            if (enBtn && esBtn) {
+              enBtn.classList.toggle('active', lang === 'en');
+              esBtn.classList.toggle('active', lang === 'es');
+            }
+          }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+          const lang = getPreferredLanguage();
+          setLanguage(lang);
+
+          document.getElementById('lang-toggle')?.addEventListener('click', (e) => {
+            const btn = e.target.closest('[data-lang]');
+            if (btn) {
+              const newLang = btn.getAttribute('data-lang');
+              setLanguage(newLang);
+            }
+          });
+        });
+
+        window.setLanguage = setLanguage;
+      })();
+    </script>
   </body>
 </html>

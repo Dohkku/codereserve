@@ -1,16 +1,8 @@
 ---
-import translations from '../i18n/translations.json';
-
-interface Props {
-  locale: 'en' | 'es';
-}
-
-const { locale } = Astro.props;
-const t = translations[locale];
 ---
 
 <section>
-  <h2>{t.social_proof_title}</h2>
-  <p>{t.social_proof_text}</p>
-  <p>{t.social_proof_cta}</p>
+  <h2 data-i18n="social_proof_title">Early Partners</h2>
+  <p data-i18n="social_proof_text">In talks with maintainers of projects totaling 50k+ stars.</p>
+  <p data-i18n="social_proof_cta">Maintain a project with 1000+ stars? You get priority. Get in touch.</p>
 </section>

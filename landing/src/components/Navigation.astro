@@ -1,22 +1,49 @@
 ---
-import translations from '../i18n/translations.json';
-
-interface Props {
-  locale: 'en' | 'es';
-}
-
-const { locale } = Astro.props;
-const t = translations[locale];
-const otherLocale = locale === 'en' ? 'es' : 'en';
-const otherPath = `/${otherLocale}/`;
 ---
 
 <nav>
   <div>
-    <a href={`/${locale}/`}>{t.nav_title}</a>
+    <a href="/" data-i18n="nav_title">CodeReserve</a>
   </div>
   <div>
-    <a href={`/${locale}/#access`}>{t.nav_access}</a>
-    <a href={otherPath}>{t.lang_toggle}</a>
+    <a href="#access" data-i18n="nav_access">Early Access</a>
+    <div id="lang-toggle" class="lang-toggle">
+      <button type="button" data-lang="en">EN</button>
+      <button type="button" data-lang="es">ES</button>
+    </div>
   </div>
 </nav>
+
+<style>
+  .lang-toggle {
+    display: inline-flex;
+    gap: 0;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .lang-toggle button {
+    background: transparent;
+    border: none;
+    color: inherit;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+    opacity: 0.6;
+    transition: opacity 0.2s, background 0.2s;
+  }
+
+  .lang-toggle button:hover {
+    opacity: 1;
+  }
+
+  .lang-toggle button.active {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .lang-toggle button:first-child {
+    border-right: 1px solid currentColor;
+  }
+</style>

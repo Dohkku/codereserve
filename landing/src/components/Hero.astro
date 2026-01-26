@@ -1,15 +1,8 @@
 ---
-import translations from '../i18n/translations.json';
-
-interface Props {
-  locale: 'en' | 'es';
-}
-
-const { locale } = Astro.props;
-const t = translations[locale];
 ---
 
 <section>
-  <h1>{t.hero_headline}</h1>
-  <p>{t.hero_subline_1}</p>
+  <h1 data-i18n="hero_headline">Reputation-based noise filtering for Open Source.</h1>
+  <p data-i18n="hero_subline_1">Trusted contributors work freely. Unverified accounts provide a Security Deposit.
+Your inbox stays clean. Good devs aren't blocked. Spam disappears.</p>
 </section>

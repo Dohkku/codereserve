@@ -1,15 +1,11 @@
 ---
-import translations from '../i18n/translations.json';
-
-interface Props {
-  locale: 'en' | 'es';
-}
-
-const { locale } = Astro.props;
-const t = translations[locale];
 ---
 
 <section>
-  <h2>{t.problem_title}</h2>
-  <p class="freetext">{t.problem_text}</p>
+  <h2 data-i18n="problem_title">The Reality</h2>
+  <p class="freetext" data-i18n="problem_text">Maintainers are burnt out.
+Your repo is getting flooded with low-quality contributions from new accounts and automated tools.
+Filtering noise is unpaid labor.
+
+If this continues, maintainers will quit and critical infrastructure will rot. You shouldn't have to choose between an open repo and your sanity.</p>
 </section>

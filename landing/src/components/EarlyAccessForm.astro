@@ -1,28 +1,20 @@
 ---
-import translations from '../i18n/translations.json';
-
-interface Props {
-  locale: 'en' | 'es';
-}
-
-const { locale } = Astro.props;
-const t = translations[locale];
 ---
 
 <section id="access">
-  <h2>{t.contact_title}</h2>
+  <h2 data-i18n="contact_title">Want In?</h2>
 
   <div class="contact-box">
     <p class="contact-email">
       <a href="mailto:dohkku@codereserve.org">dohkku@codereserve.org</a>
     </p>
 
-    <p class="contact-instructions">{t.contact_instructions}</p>
+    <p class="contact-instructions" data-i18n="contact_instructions">Email dohkku@codereserve.org with:</p>
 
     <ul class="contact-info-list">
-      <li><strong>{t.contact_info_role}</strong></li>
-      <li><strong>{t.contact_info_github}</strong></li>
-      <li><strong>{t.contact_info_interest}</strong></li>
+      <li><strong data-i18n="contact_info_role">Who you are (maintainer / contributor / company)</strong></li>
+      <li><strong data-i18n="contact_info_github">Your GitHub profile or repo</strong></li>
+      <li><strong data-i18n="contact_info_interest">Why you care</strong></li>
     </ul>
   </div>
 </section>

@@ -1,30 +1,32 @@
 ---
-import translations from '../i18n/translations.json';
-
-interface Props {
-  locale: 'en' | 'es';
-}
-
-const { locale } = Astro.props;
-const t = translations[locale];
 ---
 
 <section>
-  <h2>{t.faq_title}</h2>
+  <h2 data-i18n="faq_title">FAQ</h2>
   <article>
-    <h3>{t.faq_q1}</h3>
-    <p>{t.faq_a1}</p>
+    <h3 data-i18n="faq_q1">Don't similar tools already exist? (Tea.xyz, Gitcoin...)</h3>
+    <p data-i18n="faq_a1">Yes. Their incentives are broken.
+
+Tea.xyz: Pays based on dependency graphs. This incentivizes low-quality submissions to farm tokens. They add noise; we filter it.
+
+Gitcoin: Relies on donations and goodwill. We're a merit-based system: proven contributors work freely, unknowns prove intent with a refundable deposit.
+
+We're Reputation First. The deposit is a last resort, not a gate.</p>
   </article>
   <article>
-    <h3>{t.faq_q2}</h3>
-    <p>{t.faq_a2}</p>
+    <h3 data-i18n="faq_q2">Why Blockchain?</h3>
+    <p data-i18n="faq_a2">Programmable escrow, transparent treasuries, and permissionless reputation. Traditional payment rails don't support automatic refunds based on PR outcomes. We use crypto as infrastructure. No tokens. No speculation.</p>
   </article>
   <article>
-    <h3>{t.faq_q3}</h3>
-    <p>{t.faq_a3}</p>
+    <h3 data-i18n="faq_q3">Is this pay-to-play?</h3>
+    <p data-i18n="faq_a3">No. It's Reputation First.
+
+Trusted contributors (good account history, previous merges) work for free. Only unverified accounts need to provide a Security Deposit, and it's fully refunded when the PR is reviewed.
+
+If you're legitimate, it costs nothing.</p>
   </article>
   <article>
-    <h3>{t.faq_q4}</h3>
-    <p>{t.faq_a4}</p>
+    <h3 data-i18n="faq_q4">Who runs this?</h3>
+    <p data-i18n="faq_a4">One dev building the MVP. Goal: decentralized protocol governed by the maintainers and contributors doing the work.</p>
   </article>
 </section>

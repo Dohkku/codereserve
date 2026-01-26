@@ -1,3 +1,20 @@
 ---
-return Astro.redirect('/en/');
+import MainLayout from '../layouts/MainLayout.astro';
+import Hero from '../components/Hero.astro';
+import Problem from '../components/Problem.astro';
+import Solution from '../components/Solution.astro';
+import Magic from '../components/Magic.astro';
+import SocialProof from '../components/SocialProof.astro';
+import EarlyAccessForm from '../components/EarlyAccessForm.astro';
+import FAQ from '../components/FAQ.astro';
 ---
+
+<MainLayout title="CodeReserve - Reputation-based noise filtering for Open Source">
+  <Hero />
+  <Problem />
+  <Solution />
+  <Magic />
+  <SocialProof />
+  <EarlyAccessForm />
+  <FAQ />
+</MainLayout>
