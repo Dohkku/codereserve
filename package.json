@@ -1,0 +1,28 @@
+{
+  "name": "codereserve",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean",
+    "db:generate": "turbo run db:generate --filter=@codereserve/db",
+    "db:migrate": "turbo run db:migrate --filter=@codereserve/db",
+    "forge:build": "turbo run forge:build --filter=@codereserve/contracts",
+    "forge:test": "turbo run forge:test --filter=@codereserve/contracts"
+  },
+  "devDependencies": {
+    "turbo": "^2.3.0",
+    "typescript": "^5.3.3"
+  },
+  "packageManager": "npm@10.2.0",
+  "engines": {
+    "node": ">=18"
+  }
+}

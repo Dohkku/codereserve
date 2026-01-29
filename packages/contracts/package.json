@@ -1,0 +1,12 @@
+{
+  "name": "@codereserve/contracts",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "forge:build": "forge build",
+    "forge:test": "forge test -vvv",
+    "forge:fmt": "forge fmt",
+    "forge:snapshot": "forge snapshot",
+    "clean": "forge clean"
+  }
+}
