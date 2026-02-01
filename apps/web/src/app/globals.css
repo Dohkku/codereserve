@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground: #1a1a1a;
+  --background: #ffffff;
+  --separator: #e0e0e0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  color: var(--foreground);
+  background: var(--background);
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.btn {
+  @apply font-mono px-4 py-2 border border-primary-900 bg-primary-900 text-white rounded-sm cursor-pointer font-medium transition-all;
+}
+
+.btn:hover {
+  @apply bg-white text-primary-900;
+}
+
+.btn-outline {
+  @apply font-mono px-4 py-2 border border-primary-300 bg-transparent text-primary-900 rounded-sm cursor-pointer font-medium transition-all;
+}
+
+.btn-outline:hover {
+  @apply bg-primary-100;
+}
+
+/* Cards */
+.card {
+  @apply border border-primary-200 rounded-sm p-4;
+}
+
+/* Form elements */
+input, textarea, select {
+  @apply font-mono px-3 py-2 border border-primary-300 rounded-sm text-sm;
+}
+
+input:focus, textarea:focus, select:focus {
+  @apply outline-none border-primary-500;
+}
+
+/* Tables */
+table {
+  @apply w-full border-collapse;
+}
+
+th, td {
+  @apply text-left px-3 py-2 border-b border-primary-200;
+}
+
+th {
+  @apply font-medium text-primary-600 text-sm;
+}
+
+/* Status badges */
+.badge {
+  @apply inline-block px-2 py-0.5 text-xs font-medium rounded-sm;
+}
+
+.badge-success {
+  @apply bg-green-100 text-green-800;
+}
+
+.badge-warning {
+  @apply bg-yellow-100 text-yellow-800;
+}
+
+.badge-error {
+  @apply bg-red-100 text-red-800;
+}
+
+.badge-neutral {
+  @apply bg-primary-100 text-primary-700;
+}

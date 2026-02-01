@@ -1,0 +1,63 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout title="Privacy Policy - CodeReserve">
+  <section>
+    <h1>Privacy Policy</h1>
+    <p><strong>Last updated:</strong> February 2026</p>
+
+    <h2>What We Collect</h2>
+    <p>When you use CodeReserve, we collect:</p>
+    <ul>
+      <li><strong>GitHub account data:</strong> Username, email, avatar URL, and account ID (via GitHub OAuth)</li>
+      <li><strong>Repository data:</strong> Repository names and IDs for repos where you install our GitHub App</li>
+      <li><strong>Pull request data:</strong> PR numbers, titles, and author information for PRs in protected repos</li>
+      <li><strong>Wallet addresses:</strong> If you connect a wallet to make deposits</li>
+    </ul>
+
+    <h2>How We Use It</h2>
+    <ul>
+      <li>Calculate reputation scores for PR authors</li>
+      <li>Process deposits and refunds</li>
+      <li>Display your activity in the dashboard</li>
+    </ul>
+
+    <h2>What We Don't Do</h2>
+    <ul>
+      <li>We don't sell your data</li>
+      <li>We don't share your data with third parties (except GitHub for OAuth)</li>
+      <li>We don't track you across websites</li>
+      <li>We don't use cookies for advertising</li>
+    </ul>
+
+    <h2>Data Storage</h2>
+    <p>Your data is stored securely. Sensitive information like access tokens is encrypted.</p>
+
+    <h2>Data Deletion</h2>
+    <p>To delete your data, uninstall the GitHub App from your repositories and email us at dohkku@codereserve.org.</p>
+
+    <h2>Contact</h2>
+    <p>Questions? Email <a href="mailto:dohkku@codereserve.org">dohkku@codereserve.org</a></p>
+  </section>
+</MainLayout>
+
+<style>
+  h1 {
+    margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+
+  ul {
+    margin-bottom: 1rem;
+  }
+
+  li {
+    margin-bottom: 0.25rem;
+  }
+</style>

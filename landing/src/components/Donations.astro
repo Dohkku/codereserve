@@ -1,0 +1,115 @@
+---
+---
+
+<section id="donate">
+  <h2>Support Development</h2>
+  <p>CodeReserve is open source and self-funded. Donations help keep it running.</p>
+
+  <div class="wallet-box">
+    <span class="network">Base Network</span>
+    <div class="address-container">
+      <code id="wallet-address">0x8B30B0417D0936c31957007952f5238aFb7882DB</code>
+      <button id="copy-btn" title="Copy address">Copy</button>
+    </div>
+    <a href="https://basescan.org/address/0x8B30B0417D0936c31957007952f5238aFb7882DB" target="_blank" rel="noopener noreferrer" class="explorer-link">View on BaseScan</a>
+  </div>
+</section>
+
+<style>
+  #donate {
+    text-align: center;
+    padding: 3rem 0;
+  }
+
+  #donate h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  #donate > p {
+    opacity: 0.7;
+    margin-bottom: 1.5rem;
+  }
+
+  .wallet-box {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 1.5rem;
+  }
+
+  .network {
+    display: inline-block;
+    background: #0052ff;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+
+  .address-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  #wallet-address {
+    font-family: monospace;
+    font-size: 0.85rem;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    word-break: break-all;
+  }
+
+  #copy-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: inherit;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: background 0.2s;
+  }
+
+  #copy-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .explorer-link {
+    font-size: 0.85rem;
+    opacity: 0.7;
+  }
+
+  .explorer-link:hover {
+    opacity: 1;
+  }
+
+  @media (max-width: 600px) {
+    .address-container {
+      flex-direction: column;
+    }
+
+    #wallet-address {
+      font-size: 0.7rem;
+    }
+  }
+</style>
+
+<script>
+  document.getElementById('copy-btn')?.addEventListener('click', async () => {
+    const address = document.getElementById('wallet-address')?.textContent;
+    if (address) {
+      await navigator.clipboard.writeText(address);
+      const btn = document.getElementById('copy-btn');
+      if (btn) {
+        btn.textContent = 'Copied!';
+        setTimeout(() => btn.textContent = 'Copy', 2000);
+      }
+    }
+  });
+</script>

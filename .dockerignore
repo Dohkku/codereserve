@@ -1,0 +1,46 @@
+# Dependencies
+node_modules
+**/node_modules
+
+# Build outputs
+dist
+.next
+out
+
+# Environment files (we use env_file in compose)
+.env
+.env.*
+!.env.production.example
+
+# Git
+.git
+.gitignore
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Test files
+**/*.test.ts
+**/*.spec.ts
+**/test
+**/tests
+coverage
+
+# Documentation
+*.md
+!README.md
+
+# Development
+.turbo
+.eslintcache

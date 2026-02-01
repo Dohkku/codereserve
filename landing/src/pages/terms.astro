@@ -1,0 +1,74 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout title="Terms of Service - CodeReserve">
+  <section>
+    <h1>Terms of Service</h1>
+    <p><strong>Last updated:</strong> February 2026</p>
+
+    <h2>1. Acceptance</h2>
+    <p>By using CodeReserve, you agree to these terms. If you don't agree, don't use the service.</p>
+
+    <h2>2. The Service</h2>
+    <p>CodeReserve provides reputation-based filtering for GitHub pull requests. Maintainers can require new contributors to make refundable deposits before their PRs are accepted.</p>
+
+    <h2>3. Deposits</h2>
+    <ul>
+      <li>Deposits are made in USDC on the Base network</li>
+      <li>Deposits are held in a smart contract, not by CodeReserve</li>
+      <li>Deposits are refunded when PRs are merged or closed normally</li>
+      <li>Deposits may be slashed if a maintainer marks a PR as spam</li>
+      <li>If our backend is unavailable, deposits auto-refund after 30 days</li>
+    </ul>
+
+    <h2>4. No Guarantees</h2>
+    <p>CodeReserve is provided "as is" without warranties. We don't guarantee:</p>
+    <ul>
+      <li>Uptime or availability</li>
+      <li>Accuracy of reputation scores</li>
+      <li>That all spam will be blocked</li>
+    </ul>
+
+    <h2>5. Liability</h2>
+    <p>CodeReserve is not liable for:</p>
+    <ul>
+      <li>Lost deposits due to smart contract bugs</li>
+      <li>Incorrect spam classifications by maintainers</li>
+      <li>Any damages arising from use of the service</li>
+    </ul>
+
+    <h2>6. Maintainer Responsibilities</h2>
+    <p>Maintainers who use CodeReserve agree to:</p>
+    <ul>
+      <li>Only slash deposits for actual spam or malicious PRs</li>
+      <li>Not abuse the slash function for legitimate contributions</li>
+    </ul>
+
+    <h2>7. Changes</h2>
+    <p>We may update these terms. Continued use means you accept the changes.</p>
+
+    <h2>8. Contact</h2>
+    <p>Questions? Email <a href="mailto:dohkku@codereserve.org">dohkku@codereserve.org</a></p>
+  </section>
+</MainLayout>
+
+<style>
+  h1 {
+    margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+
+  ul {
+    margin-bottom: 1rem;
+  }
+
+  li {
+    margin-bottom: 0.25rem;
+  }
+</style>
