@@ -17,6 +17,7 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
+    "@astrojs/sitemap": "^3.7.0",
     "@astrojs/vercel": "^8.0.4",
     "astro": "^5.16.11"
   }

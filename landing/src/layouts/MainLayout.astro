@@ -6,17 +6,63 @@ import '../styles/global.css';
 
 interface Props {
   title?: string;
+  description?: string;
+  keywords?: string;
+  canonicalUrl?: string;
+  ogImage?: string;
+  lang?: string;
+  structuredData?: object[];
 }
 
-const { title = 'CodeReserve' } = Astro.props;
+const {
+  title = 'CodeReserve',
+  description = 'Reputation-based PR filtering for Open Source. Stop reviewing noise. Trusted contributors work freely, unverified accounts provide a security deposit.',
+  keywords = 'pull request filtering, PR spam filter, open source maintainer tools, GitHub spam prevention, reputation system GitHub, contributor verification',
+  canonicalUrl = 'https://codereserve.org',
+  ogImage = 'https://codereserve.org/og-image.png',
+  lang = 'en',
+  structuredData = []
+} = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta name="author" content="CodeReserve" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:locale" content={lang === 'es' ? 'es_ES' : 'en_US'} />
+    <meta property="og:site_name" content="CodeReserve" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalUrl} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <!-- Structured Data -->
+    {structuredData.length > 0 && structuredData.map(schema => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))}
   </head>
   <body>
     <Navigation />

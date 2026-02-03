@@ -7,9 +7,56 @@ import Magic from '../components/Magic.astro';
 import SocialProof from '../components/SocialProof.astro';
 import EarlyAccessForm from '../components/EarlyAccessForm.astro';
 import FAQ from '../components/FAQ.astro';
+import {
+  generateOrganizationSchema,
+  generateSoftwareApplicationSchema,
+  generateFAQSchema,
+  generateWebPageSchema
+} from '../utils/seo';
+
+// SEO Configuration
+const siteUrl = 'https://codereserve.org';
+const title = 'CodeReserve - Reputation-based PR Filtering for Open Source';
+const description = 'Stop reviewing noise. CodeReserve filters low-quality pull requests using reputation scoring. Trusted contributors work freely, unverified accounts provide a refundable security deposit.';
+const keywords = 'pull request filtering, PR spam filter, open source maintainer tools, GitHub spam prevention, reputation system GitHub, contributor verification, code review automation';
+
+// FAQ data for structured data
+const faqData = [
+  {
+    question: "Don't similar tools already exist? (Tea.xyz, Gitcoin...)",
+    answer: "Yes. Their incentives are broken. Tea.xyz pays based on dependency graphs, incentivizing low-quality submissions. Gitcoin relies on donations. We're Reputation First: proven contributors work freely, unknowns prove intent with a refundable deposit."
+  },
+  {
+    question: "Why Blockchain?",
+    answer: "Programmable escrow, transparent treasuries, and permissionless reputation. Traditional payment rails don't support automatic refunds based on PR outcomes. We use crypto as infrastructure. No tokens. No speculation."
+  },
+  {
+    question: "Is this pay-to-play?",
+    answer: "No. It's Reputation First. Trusted contributors work for free. Only unverified accounts need to provide a Security Deposit, and it's fully refunded when the PR is reviewed. If you're legitimate, it costs nothing."
+  },
+  {
+    question: "Who runs this?",
+    answer: "One dev building the MVP. Goal: decentralized protocol governed by the maintainers and contributors doing the work."
+  }
+];
+
+// Generate structured data
+const organizationSchema = generateOrganizationSchema();
+const softwareSchema = generateSoftwareApplicationSchema();
+const faqSchema = generateFAQSchema(faqData);
+const webPageSchema = generateWebPageSchema(title, description, siteUrl, 'en');
+
+const structuredData = [organizationSchema, softwareSchema, faqSchema, webPageSchema];
 ---
 
-<MainLayout title="CodeReserve - Reputation-based noise filtering for Open Source">
+<MainLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  canonicalUrl={siteUrl}
+  lang="en"
+  structuredData={structuredData}
+>
   <Hero />
   <Problem />
   <Solution />

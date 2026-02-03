@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1a1a1a"/>
+  <text x="600" y="260" font-family="monospace, 'Courier New', Courier" font-size="72" font-weight="bold" fill="#ffffff" text-anchor="middle">CodeReserve</text>
+  <line x1="300" y1="300" x2="900" y2="300" stroke="#ffffff" stroke-width="2"/>
+  <text x="600" y="380" font-family="monospace, 'Courier New', Courier" font-size="32" fill="#cccccc" text-anchor="middle">Reputation-based PR filtering</text>
+  <text x="600" y="430" font-family="monospace, 'Courier New', Courier" font-size="32" fill="#cccccc" text-anchor="middle">for Open Source</text>
+</svg>

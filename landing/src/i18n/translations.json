@@ -1,5 +1,7 @@
 {
   "en": {
+    "meta_description": "Stop reviewing noise. CodeReserve filters low-quality pull requests using reputation scoring. Trusted contributors work freely, unverified accounts provide a refundable security deposit.",
+    "meta_keywords": "pull request filtering, PR spam filter, open source maintainer tools, GitHub spam prevention, reputation system GitHub, contributor verification, code review automation",
     "nav_title": "CodeReserve",
     "nav_home": "Home",
     "nav_access": "Early Access",
@@ -44,6 +46,8 @@
     "footer_links": "Privacy • Terms • GitHub"
   },
   "es": {
+    "meta_description": "Deja de revisar ruido. CodeReserve filtra pull requests de baja calidad usando puntuacion de reputacion. Los contributors de confianza trabajan libremente, las cuentas no verificadas aportan un deposito reembolsable.",
+    "meta_keywords": "filtrado de pull requests, filtro de spam PR, herramientas para maintainers open source, prevencion de spam GitHub, sistema de reputacion GitHub, verificacion de contributors",
     "nav_title": "CodeReserve",
     "nav_home": "Inicio",
     "nav_access": "Acceso Anticipado",
