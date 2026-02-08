@@ -7,9 +7,59 @@ import Magic from '../components/Magic.astro';
 import SocialProof from '../components/SocialProof.astro';
 import Donations from '../components/Donations.astro';
 import FAQ from '../components/FAQ.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Don't similar tools already exist? (Tea.xyz, Gitcoin...)",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Their incentives are broken. Tea.xyz pays based on dependency graphs, incentivizing low-quality submissions to farm tokens. Gitcoin relies on donations and goodwill. CodeReserve is a merit-based system: proven contributors work freely, unknowns prove intent with a refundable deposit. We're Reputation First. The deposit is a last resort, not a gate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why Blockchain?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Programmable escrow, transparent treasuries, and permissionless reputation. Traditional payment rails don't support automatic refunds based on PR outcomes. We use crypto as infrastructure. No tokens. No speculation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this pay-to-play?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. It's Reputation First. Trusted contributors (good account history, previous merges) work for free. Only unverified accounts need to provide a Security Deposit, and it's fully refunded when the PR is reviewed. If you're legitimate, it costs nothing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who runs this?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "One dev building the MVP. Goal: decentralized protocol governed by the maintainers and contributors doing the work."
+      }
+    }
+  ]
+};
+
+const orgSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "CodeReserve",
+  "url": "https://codereserve.org",
+  "description": "Reputation-based noise filtering for Open Source. Protect your repos from spam PRs with refundable deposits and trust scoring."
+};
 ---
 
-<MainLayout title="CodeReserve - Reputation-based noise filtering for Open Source">
+<MainLayout
+  title="CodeReserve - Reputation-based noise filtering for Open Source"
+  description="Protect your open source repos from spam PRs. CodeReserve uses reputation scoring and refundable deposits to filter noise — trusted contributors work for free."
+>
   <Hero />
   <Problem />
   <Solution />
@@ -17,4 +67,7 @@ import FAQ from '../components/FAQ.astro';
   <SocialProof />
   <Donations />
   <FAQ />
+
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
 </MainLayout>

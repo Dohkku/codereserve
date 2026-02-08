@@ -4,8 +4,29 @@ import { Providers } from './providers';
 import { Header } from '@/components/Header';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://app.codereserve.org'),
   title: 'CodeReserve - PR Spam Protection',
-  description: 'Reputation-based PR filtering for open source projects',
+  description: 'Reputation-based PR filtering for open source projects. Manage your repos, view reputation scores, and handle deposits.',
+  openGraph: {
+    title: 'CodeReserve - PR Spam Protection',
+    description: 'Reputation-based PR filtering for open source projects.',
+    siteName: 'CodeReserve',
+    type: 'website',
+    images: ['/og-image.svg'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'CodeReserve - PR Spam Protection',
+    description: 'Reputation-based PR filtering for open source projects.',
+    images: ['/og-image.svg'],
+  },
+  robots: {
+    index: false,
+    follow: false,
+  },
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://codereserve.org/sitemap-index.xml
